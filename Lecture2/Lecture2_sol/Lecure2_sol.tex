@@ -1,64 +1,13 @@
 \documentclass[12pt, t]{beamer}
-\usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{setspace}
-\usepackage{float} 
-\usepackage{multido}
-\usepackage{multirow}
-\usepackage{array}
-\usepackage{enumerate}
-\usepackage{booktabs}
-\usepackage{indentfirst} 
-\usepackage[style=mla]{biblatex}
-\usepackage{subcaption}
-\usepackage{hyperref}
-\usepackage{textpos}
-\usepackage{mathtools, nccmath}
-\usepackage{amssymb}
+\input{~/Template/Academic/BeamerPPT/header.tex}
 
-\makeatletter
-\let\@@magyar@captionfix\relax
-\makeatother
-
-\definecolor{Turquoise3}{RGB}{0, 134, 139}
-\renewcommand{\emph}[1]{{\color{Turquoise3}\textsl{#1}}}
-\newcommand{\C}{\mathbb{C}} \newcommand{\F}{\mathbb{F}} \newcommand{\R}{\mathbb{R}} \newcommand{\Q}{\mathbb{Q}}\newcommand{\N}{\mathbb{N}}
-\newcommand{\myqed}{\hfill$\square$}
-\newcommand{\myseries}[2]{$#1_1,#1_2,\dots,#1_#2$}
-\newcommand{\nullspace}{~\\[15pt]}
-\newcommand{\remark}{\textbf{Remark: }}
-\newcommand{\scp}[2]{\langle\,#1\,,\,#2\,\rangle} \newcommand{\scpp}{\langle\,\cdot\,,\,\cdot\,\rangle}
-
-
-\usetheme{Madrid}
-\setbeamertemplate{navigation symbols}{}
-
-\addtobeamertemplate{frametitle}{}{
-\begin{textblock*}{100mm}(0.85\textwidth,-1cm)
-\includegraphics[height=1cm]{Figures/logo/logo.png}
-\end{textblock*}}
-
-\definecolor{themecolor}{RGB}{25,25,112} 
-
-\usecolortheme[named=themecolor]{structure}
-
-\setbeamertemplate{items}[default]
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=themecolor,
-    filecolor=themecolor,      
-    urlcolor=themecolor,
-    citecolor=themecolor,
-}
-
-\title{VV186 RC Part II Solution}
-\subtitle{\textbf{From Numbers to Sequences -- Exercises}\\``Practice makes Perfect\dots"}
-\institute[UM-SJTU JI]{University of Michigan-Shanghai Jiao Tong University Joint Institute}
 \author{Pingbang Hu}
+\newcommand{\Title}{Honor Mathematics Lecture 2 Solution}
+\newcommand{\SubTitle}{\textbf{From Numbers to Sequences -- Exercises}\\``Practice makes Perfect\dots"}
+\newcommand{\InstitutionS}{University of Michigan}
+\newcommand{\InstitutionL}{University of Michigan}
 
 \begin{document}
-
 \begin{frame}
     \titlepage
     \begin{center}
@@ -94,7 +43,7 @@
     \end{enumerate}
     As we can see, P4 and P8 does not hold, since we can't find the inverse element for $\cup$ and $\cap$, so the answer of this
     exercise is no.
-    \myqed
+    \qed
 \end{frame}
 
 \begin{frame}
@@ -125,7 +74,7 @@
             &\leq |a_1|+|a_2|+\dots+|a_n|=\sum^n_{i=1}|a_i|
         \end{split}
     \end{equation*}
-    \myqed
+    \qed
 \end{frame}
 
 \begin{frame}
@@ -140,7 +89,7 @@
             &=|a-b|+|c-b|
         \end{split}
     \end{equation*}
-    \myqed
+    \qed
 \end{frame}
 
 
@@ -194,7 +143,7 @@
         U=(a,\infty)\ or\ U=[a,\infty)
     \end{equation*}
     so U is an up interval.
-    \myqed
+    \qed
 \end{frame}
 
 \begin{frame}
@@ -215,7 +164,7 @@
         a+\epsilon>x=a+2\epsilon\ \Rightarrow\ \epsilon<0
     \end{equation*}
     Which contradicts to our chosen condition of $\epsilon$, so we know the second case $U=(a,\infty)$ can not be the case.
-    \myqed
+    \qed
 \end{frame}
 
 
@@ -235,7 +184,7 @@
         |x-\sup A|\geq \epsilon
     \end{equation*}
     But then we know, $\sup A-\frac{1}{2}\epsilon$ is an upper bound of $A$, which leads to a contradiction.
-    \myqed
+    \qed
 \end{frame}
 
 \begin{frame}
@@ -275,7 +224,7 @@
         \lim_{n\rightarrow\infty} S_{n+1}=\lim_{n\rightarrow\infty} S_n =: L
     \end{equation*}
     \hspace{1em} Which leads to $\sqrt{2L}=L$. By solving this equation and the fact that $S_n\geq S_1=1$, so $L=2$, which mean the limit is 2.
-    \myqed
+    \qed
 \end{frame}
 
 
@@ -306,7 +255,7 @@
             L \geq a_n \\
             L \leq b_n
         \end{cases}$, we know that $L\in [a_n,b_n]$.
-    \myqed
+    \qed
 \end{frame}
 
 \begin{frame}
@@ -415,7 +364,7 @@
     \begin{equation*}
         \overline{\lim}y_n+\underline{\lim}z_n\leq\overline{\lim}y_n+\overline{\lim}z_n
     \end{equation*}
-    \myqed
+    \qed
 \end{frame}
 
 
@@ -467,7 +416,7 @@
         1\leq \lim_{n\rightarrow\infty}a_n\leq1
     \end{equation*}
     We conclude that $ \lim_{n\rightarrow\infty}a_n=1$
-    \myqed
+    \qed
 \end{frame}
 
 
@@ -522,7 +471,7 @@
     \begin{equation*}
         \lim_{n\rightarrow\infty}\sqrt[n]{n}=1
     \end{equation*}
-    \myqed
+    \qed
 \end{frame}
 
 
